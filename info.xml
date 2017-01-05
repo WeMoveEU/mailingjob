@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<extension key="eu.wemove.mailingjob" type="module">
+  <file>mailingjob</file>
+  <name>Safer mailing worker</name>
+  <description>
+    API entry replacing job.process_mailing that:
+     - comes with a locking mecanism enforcing the setting 'Mailing CRON job limit'
+     - makes sure A/B versions are sent in parralel
+  </description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Romain Thouvenin</author>
+    <email>romain@thouvenin.pro</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/WeMoveEU/mailingjob</url>
+    <url desc="Documentation">https://github.com/WeMoveEU/mailingjob</url>
+    <url desc="Support">https://github.com/WeMoveEU/mailingjob/issues</url>
+    <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2017-01-05</releaseDate>
+  <version>1.0</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>4.6</ver>
+  </compatibility>
+  <comments>This is a new, undeveloped module</comments>
+  <civix>
+    <namespace>CRM/Mailingjob</namespace>
+  </civix>
+</extension>
